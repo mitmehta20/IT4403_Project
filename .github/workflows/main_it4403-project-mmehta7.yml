@@ -67,4 +67,4 @@ jobs:
         with:
           app-name: 'it4403-project-mmehta7'
           slot-name: 'Production'
-          package: ./dist  # Changed to point to the build output directory
+          package: . # Changed to point to the build output directory

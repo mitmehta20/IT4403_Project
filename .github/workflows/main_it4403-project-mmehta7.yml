@@ -18,14 +18,13 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'  # Changed to 18.x for better compatibility
+          node-version: '22.x'  # Changed to 18.x for better compatibility
 
       - name: npm install, build, and test
         run: |
           npm install
           npm run build
-          # Remove npm test if you don't have tests configured
-          # npm run test --if-present
+          npm run start
 
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r

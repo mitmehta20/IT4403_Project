@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 const PageHeader = ({ parentCallBack }) => {
 
-  const [ projects, setProjects ] = useState(['Welcome'])
+  const [ projects, setProjects ] = useState(['Lab 1'])
 
     const onTrigger = (event) => {
         console.log(event)

@@ -3,6 +3,7 @@ import Home from './Home'
 import Contact from './Contact'
 import './PageBody.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Lab1 from './ProjectComponents/Lab1'
 
 const PageBody = ( { pageDisplay } ) => {
 
@@ -12,6 +13,8 @@ const PageBody = ( { pageDisplay } ) => {
         return <Home/>
       } else if(pageDisplay === 'Contact'){
         return <Contact/>
+    } else if(pageDisplay === 'Lab 1') {
+      return <Lab1/>
     }
   }
   
